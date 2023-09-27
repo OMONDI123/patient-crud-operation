@@ -52,6 +52,8 @@ public class PatientServiceImpl implements PatientService {
 			PatientEntity patientEntity = new PatientEntity();
 			patientEntity.setFirstName(patient.getFirstName());
 			patientEntity.setMiddleName(patient.getMiddleName());
+			patientEntity.setLastName(patient.getLastName());
+			patientEntity.setActive(true);
 			patientEntity.setIdentificationNumber(patient.getIdentificationNumber());
 			patientEntity.setIdentificationType(patient.getIdentificationType());
 			return patientRepository.save(patientEntity);
@@ -72,6 +74,8 @@ public class PatientServiceImpl implements PatientService {
 
 		patientEntity.setFirstName(patient.getFirstName());
 		patientEntity.setMiddleName(patient.getMiddleName());
+		patientEntity.setLastName(patient.getLastName());
+		patientEntity.setActive(patient.isActive());
 		patientEntity.setIdentificationNumber(patient.getIdentificationNumber());
 		patientEntity.setIdentificationType(patient.getIdentificationType());
 		return patientRepository.save(patientEntity);

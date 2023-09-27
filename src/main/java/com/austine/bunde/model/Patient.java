@@ -11,6 +11,7 @@ private Long id;
 	private String middleName;
 	
 	private String lastName;
+	private boolean isActive;
 	
 	private ValidPatienType identificationType;	
 	private String identificationNumber;
@@ -62,6 +63,14 @@ private Long id;
 
 	public void setIdentificationType(ValidPatienType identificationType) {
 		this.identificationType = identificationType;
+	}
+
+	public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
 	}
 	
 	
