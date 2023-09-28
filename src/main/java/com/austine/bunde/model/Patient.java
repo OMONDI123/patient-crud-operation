@@ -2,18 +2,23 @@ package com.austine.bunde.model;
 
 import com.austine.bunde.validation.ValidPatienType;
 
+/**
+ * @author Austine Bunde
+ *
+ * Backend Java Developer
+ */
+
 public class Patient {
-	
-private Long id;
-	
+	private Long id;
+
 	private String firstName;
-	
+
 	private String middleName;
-	
+
 	private String lastName;
 	private boolean isActive;
-	
-	private ValidPatienType identificationType;	
+
+	private ValidPatienType identificationType;
 	private String identificationNumber;
 
 	public Long getId() {
@@ -48,7 +53,6 @@ private Long id;
 		this.lastName = lastName;
 	}
 
-	
 	public String getIdentificationNumber() {
 		return identificationNumber;
 	}
@@ -72,7 +76,7 @@ private Long id;
 	public void setActive(boolean isActive) {
 		this.isActive = isActive;
 	}
-	
-	
+
 
 }
+

@@ -11,6 +11,11 @@ import javax.persistence.Table;
 
 import com.austine.bunde.validation.ValidPatienType;
 
+/**
+ * @author Austine Bunde
+ *
+ * Backend Java Developer
+ */
 @Entity
 @Table(name = "patient")
 public class PatientEntity {
@@ -32,7 +37,7 @@ public class PatientEntity {
     @Column(name = "identification_type")
     private ValidPatienType identificationType;
 	
-	@Column(name = "identification_number")
+	@Column(name = "identifcation_number")
 	private String identificationNumber;
 	@Column(name = "isactive", columnDefinition = "boolean")
 	private boolean isActive;
@@ -94,7 +99,6 @@ public class PatientEntity {
 	public void setActive(boolean isActive) {
 		this.isActive = isActive;
 	}
-	
-	
 
 }
+

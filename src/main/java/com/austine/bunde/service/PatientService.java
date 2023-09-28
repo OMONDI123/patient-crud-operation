@@ -5,6 +5,12 @@ import java.util.List;
 import com.austine.bunde.entity.PatientEntity;
 import com.austine.bunde.model.Patient;
 
+/**
+ * @author Austine Bunde
+ *
+ * Backend Java Developer
+ */
+
 public interface PatientService {
 	public PatientEntity getPatientById(Long patient_id);
 	
